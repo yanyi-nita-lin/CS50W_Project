@@ -2,12 +2,24 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS50W Study Group</title>
     <link rel="stylesheet" href="../style.css">
-  </head>
+    <style>
+    @media (min-width: 500px) {
+        h1::before {
+            content: "Nita Lin";
+        }
+    }
 
+    @media (max-width: 499px) {
+        h1::before {
+            content: "Yan-Yi Lin";
+        }
+    }
+</style>
   <body>
-    <p>nothing on this page</p>
+    <h1></h1>
   </body>
 
 </html>
