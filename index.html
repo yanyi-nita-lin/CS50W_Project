@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <title>CS50W Study Group</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <style>
+    .row > div {
+        padding: 20px;
+        background-color: lightblue;
+        border: 2px solid gray;
+    }
+  </style>
   </head>
 
   <body>
-    <h1>
+    <div>
       <h1>Monash FIT Study Group</h1>
+    </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                This is a section.
+            </div>
+            <div class="col-3">
+                This is another section.
+            </div>
+            <div class="col-3">
+                This is a third section.
+            </div>
+            <div class="col-3">
+                This is a fourth section.
+            </div>
+        </div>
+    </div>
+
+    <div>
       <ul>
         <li><a href="members/index.html">Members</a></li>
         <li><a href="schedule.html">Scedule</a></li>
@@ -17,6 +45,6 @@
       </ul>
 
     <img src="images/logo.png" alt="Monash FIT study group logo">
-
+    </div>
   </body>
 </html>
