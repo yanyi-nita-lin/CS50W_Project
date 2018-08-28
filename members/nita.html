@@ -2,12 +2,83 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CS50W Study Group</title>
     <link rel="stylesheet" href="../style.css">
-  </head>
+    <title>Nita's Webpage</title>
+    <style>
+    @media (min-width: 500px) {
+        h1::before {
+            content: "Nita's To-Do List";
+        }
+    }
 
+    @media (max-width: 499px) {
+        h1::before {
+            content: "Yan-Yi's To-Do List";
+        }
+    }
+
+    html {
+      font-family: "Arial", Helvetica, sans-serif;
+      text-align: center;
+    }
+
+    body {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    input {
+      padding-top: 30px;
+      width: 500px;
+      height: 60px;
+      font-size: 40px;
+      border: 0px;
+      border-bottom: 2px solid #333;
+    }
+
+    input:focus {
+      outline: none;
+    }
+
+    li {
+      text-align: left;
+      font-size: 40px;
+      list-style: none;
+      margin: 0;
+    }
+
+    li:hover {
+      text-decoration: line-through;
+    }
+  </style>
   <body>
-    <p>nothing on this page</p>
+    <h1></h1>
+    <input id="input" placeholder="What needs to be done?">
+    <ul id="list"></ul>
   </body>
+
+  <script>
+  function newItem() {
+    var item = document.getElementById("input").value;
+    var ul = document.getElementById("list");
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode("💩 " + item));
+    ul.appendChild(li);
+    document.getElementById("input").value = "";
+    li.onclick = removeItem;
+  }
+
+  document.body.onkeyup = function(e) {
+    if (e.keyCode == 13) {  // 13 is the code for the enter key
+      newItem();
+    }
+  };
+
+  function removeItem(e) {
+    e.target.parentElement.removeChild(e.target);
+  }
+  </script>
 
 </html>

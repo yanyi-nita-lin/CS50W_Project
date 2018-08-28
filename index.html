@@ -4,19 +4,31 @@
     <meta charset="UTF-8">
     <title>CS50W Study Group</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+    var name = prompt("What is you name?", "");
+    </script>
+
   </head>
 
   <body>
-    <h1>
-      <h1>Monash FIT Study Group</h1>
+    <header>
+      Monash FIT Study Group
+    </header>
 
+    <div>
+      <img src="images/logo.png" alt="Monash FIT study group logo">
+      <script>
+        document.write("<p>Welcome! " + name + "</p>");
+      </script>
       <ul>
         <li><a href="members/index.html">Members</a></li>
-        <li><a href="schedule.html">Scedule</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
         <li><a href="notes/index.html">Notes</a></li>
       </ul>
+    </div>
 
-    <img src="images/logo.png" alt="Monash FIT study group logo">
-
+    <footer>
+      <p>© 2018 Monash FIT Study Group.</p>
+    </footer>
   </body>
 </html>
