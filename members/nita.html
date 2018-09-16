@@ -1,84 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS50W Study Group</title>
-    <link rel="stylesheet" href="../style.css">
-    <title>Nita's Webpage</title>
-    <style>
-    @media (min-width: 500px) {
-        h1::before {
-            content: "Nita's To-Do List";
-        }
-    }
 
-    @media (max-width: 499px) {
-        h1::before {
-            content: "Yan-Yi's To-Do List";
-        }
-    }
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    html {
-      font-family: "Arial", Helvetica, sans-serif;
-      text-align: center;
-    }
+    <title>Monash FIT Taiwanese Study Group</title>
 
-    body {
-      max-width: 500px;
-      margin: 0 auto;
-    }
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    input {
-      padding-top: 30px;
-      width: 500px;
-      height: 60px;
-      font-size: 40px;
-      border: 0px;
-      border-bottom: 2px solid #333;
-    }
+    <!-- Custom styles for this template -->
+    <link href="../css/member.css" rel="stylesheet">
+    <link href="../css/all.min.css" rel="stylesheet">
 
-    input:focus {
-      outline: none;
-    }
+</head>
 
-    li {
-      text-align: left;
-      font-size: 40px;
-      list-style: none;
-      margin: 0;
-    }
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">MTSG</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../members/index.html">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../notes/index.html">Notes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+  <br>
+  <h1>Nita's Porfolio</h1>
+  <div class="list-group">
+    <a href="nita/nita_todolist.html" class="list-group-item list-group-item-action list-group-item-light">To Do List</a>
+    <a href="nita/nita_login.html" class="list-group-item list-group-item-action list-group-item-light">Login</a>
+    <a href="nita/nita_flickr.html" class="list-group-item list-group-item-action list-group-item-light">Flickr</a>
+    <br>
+  </div>
+</div>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Monash FIT Taiwanese Study Group</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
-    li:hover {
-      text-decoration: line-through;
-    }
-  </style>
-  <body>
-    <h1></h1>
-    <input id="input" placeholder="What needs to be done?">
-    <ul id="list"></ul>
-  </body>
-
-  <script>
-  function newItem() {
-    var item = document.getElementById("input").value;
-    var ul = document.getElementById("list");
-    var li = document.createElement("li");
-    li.appendChild(document.createTextNode("💩 " + item));
-    ul.appendChild(li);
-    document.getElementById("input").value = "";
-    li.onclick = removeItem;
-  }
-
-  document.body.onkeyup = function(e) {
-    if (e.keyCode == 13) {  // 13 is the code for the enter key
-      newItem();
-    }
-  };
-
-  function removeItem(e) {
-    e.target.parentElement.removeChild(e.target);
-  }
-  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Login Test</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <h1>Simple Login</h1>
+  <script>
+    function check() {
+      if(document.getElementById("username").value=="") {
+        alert("Please input username!");
+        return false;
+      }
+      else if(document.getElementById("password").value=="") {
+        alert("Please input password!");
+        return false;
+      }
+      else {
+       alert("Submitted successfully!")
+       return true;
+      }
+    }
+  </script>
+  <form name="form1">
+    <input type="text" id="username" placeholder="username">
+    <input type="password" id="password" placeholder="password" >
+    <input type="submit" onclick="check()">
+  </form>
+ </body>
+ </html>
