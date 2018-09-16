@@ -1,54 +1,70 @@
 <!DOCTYPE html>
-
-<!-- 有data model觀念的JavaScript/jQuery寫法 -->
-<!-- Reference : 轉個彎日誌 http://blog.turn.tw/?p=2948 -->
 <html>
+
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<meta charset="UTF-8">
-    <title>Tom's todo-list</title>
-    <link rel="stylesheet" href="../style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Monash FIT Taiwanese Study Group Tom's page</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/member.css" rel="stylesheet">
+    <link href="../css/all.min.css" rel="stylesheet">
+
 </head>
-	
+
 <body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">MTSG</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../members/index.html">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../schedule.html">Schedule</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../notes/index.html">Notes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+  <br>
+  <h1>Tom's Practice</h1>
+  <div class="list-group">
+    <a href="tom/tom_todolist.html" class="list-group-item list-group-item-action list-group-item-light">To Do List</a>
+    <a href="tom/tom_validation.html" class="list-group-item list-group-item-action list-group-item-light">Simple login</a>
+    <a href="tom/tom_validtion_w3cPractice.html" class="list-group-item list-group-item-action list-group-item-light">Simple login with CSS</a>
+    <br>
+  </div>
+</div>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Monash FIT Taiwanese Study Group</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
-<p> Tom's todo-list </p>
-<ul id='todo-list'></ul>
-<script>
-	var todos = [
-	{text: 'Exercise.'},
-	{text: 'Learn JavaScript.'},
-	{text: 'Write a blog.'},
-	];
-
-	function renderTodoList(){
-		$('#todo-list').empty();
-
-		todos.map(function(el){
-			$('#todo-list').append(new $('<li>' + el.text + '</li>'))
-		})
-	}
-
-	renderTodoList();
-
-//然後在button元件或是li元件的onclick事件裡面操作todos陣列，就算是操作data model了。
-//此外，記得在所有關於data model的操作內呼叫renderTodoList函式。
-</script>
-
-<button id='clear' onclick='clearAllTodo()'>Clear all</button>
-
-<script>
-
-	function clearAllTodo(){
-		todos = [];
-
-		renderTodoList();
-	}
-
-	//像這樣任何操作都從data model出發，最後再render的作法，可以讓data model跟UI元件保持某種對應關係，讓程式碼更好維護。
-	//有經驗的前端工程師，光靠這種技巧，再搭配Handlebars之類的模板系統，就可以寫出十分漂亮的程式碼。
-
-</script>
-
+  <!-- Bootstrap core JavaScript -->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
