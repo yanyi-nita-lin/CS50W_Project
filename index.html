@@ -1,50 +1,152 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>CS50W Study Group</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <style>
-    .row > div {
-        padding: 20px;
-        background-color: lightblue;
-        border: 2px solid gray;
-    }
-  </style>
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Monash FIT Taiwanese Study Group</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+
   </head>
 
   <body>
-    <div>
-      <h1>Monash FIT Study Group</h1>
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                This is a section.
-            </div>
-            <div class="col-3">
-                This is another section.
-            </div>
-            <div class="col-3">
-                This is a third section.
-            </div>
-            <div class="col-3">
-                This is a fourth section.
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MTSG</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="members/index.html">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notes/index.html">Notes</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
 
-    <div>
-      <ul>
-        <li><a href="members/index.html">Members</a></li>
-        <li><a href="schedule.html">Scedule</a></li>
-        <li><a href="notes/index.html">Notes</a></li>
-      </ul>
+    <!-- Header with Background Image -->
+    <header class="business-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <br>
+            <h1 class="display-3 text-center text-white mt-4">Monash FIT Taiwanese Study Group</h1>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <img src="images/logo.png" alt="Monash FIT study group logo">
+    <!-- Page Content -->
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="mt-4">What We Do</h2>
+          <p>Monash FIT Taiwanese Study Group is founded in 2018</p>
+          <p>The purpose for this group is sharing knowledge and techniques in IT field.</p>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="mt-4">Contact Us</h2>
+          <address>
+            <strong>Monash University - Caulfield Campus</strong>
+            <br>900 Dandenong Road
+            <br>Caulfield East
+            <br>Victoria 3145
+            <br>
+          </address>
+          <address>
+            <abbr title="Phone">P:</abbr>
+            (123) 456-7890
+            <br>
+            <abbr title="Email">E:</abbr>
+            <a href="mailto:#">name@example.com</a>
+          </address>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="images/banner.gif" alt="Members">
+            <div class="card-body">
+              <h4 class="card-title">Members</h4>
+              <p class="card-text">This website is developed and maintained by the group memebers. </p>
+            </div>
+            <div class="card-footer">
+              <a href="members/index.html" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="images/banner.gif" alt="Schedule">
+            <div class="card-body">
+              <h4 class="card-title">Schedule</h4>
+              <p class="card-text">The topics and tasks for each week in this study group.</p>
+            </div>
+            <div class="card-footer">
+              <a href="schedule.html" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="images/banner.gif" alt="Notes">
+            <div class="card-body">
+              <h4 class="card-title">Notes</h4>
+              <p class="card-text">Useful sources and notes for the web development.</p>
+            </div>
+            <div class="card-footer">
+              <a href="notes/index.html" class="btn btn-primary">Find Out More!</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /.row -->
+
     </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Monash FIT Taiwanese Study Group</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
   </body>
+
 </html>

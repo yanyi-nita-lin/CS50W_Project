@@ -1,16 +1,344 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>CS50W Study Group</title>
-    <link rel="stylesheet" href="../style.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Monash FIT Taiwanese Study Group</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this template -->
+        <link href="../css/notes.css" rel="stylesheet">
+        <link href="../css/all.min.css" rel="stylesheet">
+    </head>
   </head>
   <body>
-    <h1>Notes</h1>
-    <p>What we learned in the study group:</p>
-    <ol>
-      <li><a href="week1.html">Git and Github</a></li>
-      <li><a href="week2.html">HTML and CSS</a></li>
-    </ol>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">MTSG</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../members/index.html">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="../notes/index.html">Notes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Notes</h2>
+            <h3 class="section-subheading text-muted">Weekly notes and resources sharing</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../images/note.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Week 3</h4>
+              <p class="text-muted">Version Control (Git and GitHub)</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../images/note.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Week 4</h4>
+              <p class="text-muted">HTML and CSS</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../images/note.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Week 5</h4>
+              <p class="text-muted">javascript, jQuery, jQuery UI</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../images/note.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Week 6</h4>
+              <p class="text-muted">javascript, jQuery, jQuery UI (Validation)</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../images/note.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Week 7</h4>
+              <p class="text-muted">Review and optimise (UI, RWD, etc)</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fas fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="../images/note.jpg" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Week 8</h4>
+              <p class="text-muted">HTTP request (jQuery Ajax)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Monash FIT Taiwanese Study Group</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 Week 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Week 3 Notes</h2>
+                  <p class="item-intro text-muted">Version Control (Git and GitHub)</p>
+                  <p>
+                    <li>Tutorial: <a href="https://blog.techbridge.cc/2018/01/17/learning-programming-and-coding-with-python-git-and-github-tutorial/">Link</a></li>
+                    <li>Git commands: <a href="https://code.yidas.com/git-commands/">Link</a></li>
+                    <li>Git cheat sheet: <a href="https://education.github.com/git-cheat-sheet-education.pdf">Download</a></li>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 Week 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Week 4 Notes</h2>
+                  <p class="item-intro text-muted">HTML and CSS</p>
+                  <p>
+                    <li>Tutorial for HTML: <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML">Link</a></li>
+                    <li>Tutorial for CSS: <a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics">Link</a></li>
+                    <li>Code Guide: <a href="http://juanitofatas.github.io/code-guide/">Link</a></li>
+                    <li>HTML references: <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Link</a></li>
+                    <li>Browser support tables: <a href="https://caniuse.com/">Link</a></li>
+                    <li>Online editor: <a href="https://jsfiddle.net/">jsFiddle  </a><a href="https://codepen.io/">codepen</a></li>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 Week 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Week 5 Notes</h2>
+                  <p class="item-intro text-muted">jQuery and jQuery UI</p>
+                  <p></p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 Week6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Week 6 Notes</h2>
+                  <p class="item-intro text-muted">Validation</p>
+                  <p></p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 Week7-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Week 7 Notes</h2>
+                  <p class="item-intro text-muted">Review and optimise (UI, RWD, etc)<br>Leetcode: Top 100 Liked Questions #1, 20, 21</p>
+                  <p class="item-intro text-muted"></p>
+                  <p>
+                    <li>isPrime(): <a href="https://stackoverflow.com/questions/40200089/is-a-number-prime">Link</a></li>
+                    <li>recurrence: <a href="http://www.csie.ntnu.edu.tw/~u91029/DynamicProgramming.html">Link</a></li>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 Week8-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Week 8 Notes</h2>
+                  <p class="item-intro text-muted">HTTP request(jQuery Ajax)<br>Leetcode: Top 100 Liked Questions #35, 53, 70</p>
+                  <p>
+                    <li>Material for jQery Ajax: <a href="https://notfalse.net/30/jquery-ajax">Link</a></li>
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
   </body>
 </html>
