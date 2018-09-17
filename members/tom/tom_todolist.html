@@ -7,7 +7,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<meta charset="UTF-8">
     <title>Tom's todo-list</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
 </head>
 	
 <body>
@@ -87,7 +87,7 @@
 	<input type="text" name="input" id="input">
 	<button name="al" onclick="addList(input.value)">Add into List</button>
 	<div class="list">
-	<ul>
+	<ul id="mylist">
 	</ul>
 	</div>
 	<button name="ci" onclick="clearItem()">Clear Item</button>
@@ -109,6 +109,8 @@ function addList(item){
 		newList.appendChild(ck);
 		inputbox.value = "";
 	}
+	var cls = document.getElementById("mylist");
+	cls.hidden = null;
 }
 
 function rmItem(e){
@@ -128,6 +130,40 @@ function rmItem(e){
 
 function clearItem(){
 	alert("I'll do that later. :p");
+	var cls = document.getElementsByClassName("list");
+	console.log(cls);
+	var clearMylist = document.getElementById("mylist");
+	//hidden <div> mylist </div>
+	clearMylist.hidden = 'true';	
+
+	console.log(clearMylist);
+	//clearMylist.style.display='none';
+	//clearMylist.style.display='block';
+	//cls.style.display = 'none';
+	//for (var i = 0; len = cls.length; i < len; i++)
+	//{
+	//	cls.pop(cls[i]);
+	//}
+
+	uList = null;
+	newList = null;
+	newText = null;
+	ck = null;
+	location.reload();
+	//document.getElementsByClassName("list")[0].getElementsByTagName("ul")[0] = null;
+	//newList = document.createElement("hidden") = true;
+
+	//wait for refactoring
+	//- 最小化 DOM 的訪問次數
+	//- 如果需要多次訪問某個 DOM 節點，請局部變量使用儲存它的引用
+	//- 小心處理HTML集合，因為他實時聯繫著底層文檔。把集合的長度緩存到一個變量中，
+	//  並在Iterator中使用它。如果需要經常操作集合，建議把它拷貝到一個數組中
+	//- 如果可能的話，使用速度更快的 API，比如 querySelectorAll() 和 firstElementChild。
+	//- 要留意重繪和重排，批量修改樣式時，“離線”操作 DOM 樹，使用緩存，並減少訪問佈局信息的次數
+	//- 動畫中使用絕對定位，使用拖放代理。
+	//- 使用事件委託來減少事件處理器的數量。
+
+
 }
 </script>
 
